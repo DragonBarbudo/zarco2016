@@ -1,0 +1,107 @@
+include _config.jade
+
++html5
+  +head('Zarco Advanced Quality Superior', 'Zarco, motocicletas, refacciones, accesorios', 'Descripción')
+  
+  body(ng-app="dw4")
+
+    
+    +menu
+    h1.logo(du-smooth-scroll="#inicio")
+    header(backstretch backstretch-images=" ['app/img/header_1.jpg', 'app/img/header_2.jpg', 'app/img/header_3.jpg']", backstretch-fade="1")#inicio
+      .container: h2.c8.o4.phrase
+        small TODO PARA
+        span MOTOCICLETAS
+    
+    .mainBannerOutside: .mainBanner: .container: .c12: slick(dots="true", arrows="false")
+      div: img(src="app/img/promo1.jpg").fluid
+      div: img(src="app/img/promo2.jpg").fluid
+    
+    section#nosotros
+      .container
+        .c8.o2: h3.title
+          .main NOSOTROS
+          .sec Nuestra misión
+        .c8.o2
+          p: strong Somos una comercializadora de refacciones y accesorios para motocicletas, nuestro mayor interés y prioridades son:
+          ul 
+            li Importar y comercializar las mejores marcas en el mercado.
+            li Tener el mejor balance entre Costo y Calidad.
+            li Lograr tener el mayor surtido y variedad de refacciones y accesorios.
+            li Mantener el mayor beneficio económico entre nuestros distribuidores como de nuestros clientes.
+          p Además de poner a tu alcance el mayor inventario de refacciones y accesorios para moto, brindamos la correcta asesoría para que tu compra sea la correcta para tu moto.
+    section#tienda
+      .container
+        .c8.o2: h3.title
+          .main TIENDA
+          .sec Visítanos
+        .c8.o2
+          p: strong Contamos con una de las tiendas de mayoreo y menudeo con mayor surtido de refacciones y accesorios de la Ciudad de México, nuestro surtido va acompañado con la mejor asesoría de compra, cada uno de nuestro agentes de ventas, esta capacitado para orientarte y recomendarte el mejor reemplazo que tu motocicleta necesita.
+        .c6.g
+          .map
+            | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8927227204504!2d-99.10369437404935!3d19.460191525109618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f960598ec16b%3A0x8bb35596d1531e6b!2sNte.+82+5123%2C+Gertrudis+S%C3%A1nchez+III+Secc%2C+07839+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1475534323512" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+        .c6.g
+          p: strong.red Tienda Yu-Long Moto
+          p Norte 82 No 5123 Colonia Gertrudis Sánchez
+          p Delegación Gustavo A. Madero, Ciudad de México
+          p Teléfono: (55) 2603 4801
+    section#marcas
+      .container
+        .c8.o2: h3.title
+          .sec Nuestras
+          .main MARCAS
+        .c8.o2
+          p: strong Una de nuestras prioridades es comercializar las marcas que tienen el mejor desempeño funcional y costo-calidad, logramos tener vinculo con las marcas que hoy en día brindan múltiples beneficios.
+        .c8.o2
+          slick(slides-to-show="3", slides-to-scroll="3", dots="true", arrows="false").marcasslider
+            div: img(src="app/img/marca_1.jpg" title="Zarco: Marca de creación nacional con producción nacional e internacional con crecimiento importante de comercialización de refacciones para motocicleta.").tooltip.fluid
+            div: img(src="app/img/marca_2.jpg" title="Zhenghe: Fabricante Chino con una de las mayores diversidades de refacciones y accesorios para motocicleta.").tooltip.fluid
+            div: img(src="app/img/marca_3.jpg" title="Kaije: Uno de los fabricantes de baterías para motocicleta con mayor surtido.").tooltip.fluid
+            div: img(src="app/img/marca_4.jpg" title="WYL: Fabricante de cascos para motociclistas, cuenta con amplia gama de modelos a elegir.").tooltip.fluid
+            div: img(src="app/img/marca_5.jpg" title="KINGWAV: Fabricante de llantas para motocicleta, con amplia variedad de modelos.").tooltip.fluid
+            div: img(src="app/img/marca_6.jpg" title="MOTOBATT: Especialista en fabricar baterías para todo tipo de motocicleta.").tooltip.fluid
+            div: img(src="app/img/marca_7.jpg" title="ITALIKA: Una de las más importantes empresa fabricante de motocicletas, con su amplia gama de refacciones.").tooltip.fluid
+            div: img(src="app/img/marca_8.jpg" title="NGK: Especialistas en fabricación de bujías para todo tipo de motocicleta.").tooltip.fluid
+            div: img(src="app/img/marca_9.jpg" title="CASTROL: Fabricante líder en el mundo de los aceites lubricantes par motor de cualquier motocicleta.").tooltip.fluid
+    
+    
+    section#productos
+      .container
+        .c8.o2: h3.title
+          .main PRODUCTOS
+          .sec El mejor costo-calidad
+        .c8.o2
+          slick(slides-to-show="3", slides-to-scroll="3", dots="true", arrows="false").productosslider
+            div
+              img(src="app/img/pr_1.jpg").fluid
+              .text Baterias
+            div
+              img(src="app/img/pr_2.jpg").fluid
+              .text Cascos
+            div
+              img(src="app/img/pr_3.jpg").fluid
+              .text Llantas
+            div
+              img(src="app/img/pr_4.jpg").fluid
+              .text Clutch
+            div
+              img(src="app/img/pr_5.jpg").fluid
+              .text Kits de cilindro
+            div
+              img(src="app/img/pr_6.jpg").fluid
+              .text Kits de cabeza
+            div
+              img(src="app/img/pr_7.jpg").fluid
+              .text Focos
+            div
+              img(src="app/img/pr_8.jpg").fluid
+              .text Cámaras
+            div
+              img(src="app/img/pr_9.jpg").fluid
+              .text Kits de sprocket
+            div
+              img(src="app/img/pr_10.jpg").fluid
+              .text Cadenas
+    
+    
+    +scripts

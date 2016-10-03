@@ -1,0 +1,229 @@
+@import '../dw4/_dw4';
+
+/* WIDTHS */
+@containerWidth: 1200px;
+@containerWidthTablet : 720px;
+@gutterWidth: 5px;
+/* COLORS */
+@b:   #202020;
+@w:   #fff;
+@g:    #888;
+@main:    #D72E2E;
+@sec:     #4082BC;
+
+/* FONTS */
+
+.font{ font-family: 'Montserrat', sans-serif; }
+.font2{ font-family: 'Pragati Narrow', sans-serif; }
+
+/* -----------  */
+body{
+  .font;
+}
+
+nav{
+  background: @main;
+  position: fixed;
+  bottom: 0; left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 10;
+  ul{
+    .container;
+    li{
+      .c;
+      text-align: center;
+      a{
+        font-size: 0.7em;
+        color:@w;
+        .font2;
+        text-transform: uppercase;
+        display: block;
+        padding: 5px;
+        border: 1px solid @main;
+        &:hover,&.active{
+          border: 1px solid @w;
+        }
+      }
+    }
+  }
+}
+
+h1.logo{
+  width: 287px; height: 212px;
+  background: url(img/zarco.png);
+  position: fixed;
+  left: 0; top: 0;
+  z-index: 10;
+}
+
+header{
+  width: 100%;
+  height: 284px;
+  .phrase{
+    margin-top: 70px;
+    text-shadow: 0 5px 2px @b;
+    line-height: 40px;
+    small{
+      font-size: 2em;
+      color:@main;
+    }
+    span{
+      display: block;
+      font-size: 5.2em;
+      color:@w;
+    }
+  }
+}
+
+.mainBannerOutside{
+  position: relative;
+  z-index: 2;
+}
+.mainBanner{
+  background: @w;
+  .box-shadow(0 0 26px @b);
+  position: relative;
+  &:before, &:after{
+    content:"";
+    position: absolute;
+    background-image: url(img/corners.png);
+    width: 450px; height: 80px;
+    z-index: -1;
+  }
+  &:before{
+    right: 0; top: -40px;
+    background-position: top right;
+  }
+  &:after{
+    left: 0; bottom: -40px;
+    background-position: bottom left;
+  }
+  .slick-dots{
+    position: absolute;
+    left: 0; top: 45%;
+    li{
+      font-size: 0;
+      margin: 2px;
+      &:before{
+        content:"";
+        display: block;
+        width: 14px; height: 14px;
+        .border-radius(50%);
+        border:3px solid @g;
+      }
+      &.slick-active{
+        &:before{
+          border:3px solid @w;
+          background: @main;
+        }
+      }
+    }
+  }
+}
+
+
+section{
+  background: @b;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 200px;
+  border-bottom: 2px solid @main;
+  h3.title{
+    color:@main;
+    padding: 80px 0 40px 0;
+    text-shadow: 0 5px 2px @b;
+    .main{
+      .font;
+      font-weight: 700;
+      font-size: 4em;
+      &+.sec{ margin-top: -20px; }
+    }
+    .sec{
+      .font2;
+      color:@w;
+      font-size: 2em;
+      &+.main{ margin-top: -20px; }
+    }
+  }
+  p, ul, ol{
+    .font2;
+    font-size: 1.4em;
+    color:@w;
+    margin: 10px 0;
+    text-shadow: 0 0px 20px @b;
+  }
+  ul,ol{
+    list-style-type: square;
+    list-style-position: inside;
+  }
+}
+
+
+.map{
+  background: @b;
+  padding: 10px;
+}
+
+
+.red{
+  color: @main;
+}
+
+
+.marcasslider, .productosslider{
+
+  .slick-slide{
+    padding: 0 10px;
+  }
+  .slick-dots{
+    text-align: center;
+    li{
+      font-size: 0;
+      margin: 0 2px;
+      display: inline-block;
+      &:before{
+        content:"";
+        display: block;
+        width: 14px; height: 14px;
+        .border-radius(50%);
+        border:3px solid @g;
+      }
+      &.slick-active{
+        &:before{
+          border:3px solid @w;
+          background: @main;
+        }
+      }
+    }
+  }
+}
+
+.productosslider{
+  .slick-slide{
+
+    .text{
+      color:@w;
+      text-align: center;
+      padding:  10px 5px;
+      background: @b;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.tooltipster-default{
+  background: @main;
+  border:none;
+  max-width: 200px;
+}
+
+
+
+
+section#nosotros{ background-image: url(img/nosotros.jpg); }
+section#tienda{ background-image: url(img/tienda.jpg); }
+section#marcas{ background-image: url(img/marcas.jpg); }
+section#productos{ background-image: url(img/productos.jpg);}
