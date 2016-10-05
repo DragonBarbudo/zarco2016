@@ -28,11 +28,21 @@ nav{
   width: 100%;
   padding: 10px 0;
   z-index: 10;
+  @media @mobile{
+    bottom: auto; top: 0;
+  }
   ul{
     .container;
+    @media @mobile{
+      width: 80%;
+      margin-left: 20%;
+    }
     li{
       .c;
       text-align: center;
+      @media @mobile{
+        .c(4);
+      }
       a{
         font-size: 0.7em;
         color:@w;
@@ -41,8 +51,7 @@ nav{
         display: block;
         padding: 5px;
         border: 1px solid @main;
-        &:hover,&.active{
-          border: 1px solid @w;
+        @media @mobile{
         }
       }
     }
@@ -51,10 +60,18 @@ nav{
 
 h1.logo{
   width: 287px; height: 212px;
-  background: url(img/zarco.png);
+  background-image: url(img/zarco.png);
+  background-size: 100%;
   position: fixed;
   left: 0; top: 0;
   z-index: 10;
+  @media @tablet{
+    width: 160px;
+  }
+  @media @mobile{
+    width: 25%;
+    left: -5%;
+  }
 }
 
 header{
@@ -64,14 +81,27 @@ header{
     margin-top: 70px;
     text-shadow: 0 5px 2px @b;
     line-height: 40px;
+    @media @mobile{
+      line-height: 30px;
+      margin-top: 130px;
+    }
     small{
       font-size: 2em;
       color:@main;
+      @media @mobile{
+        font-size: 1.6em;
+      }
     }
     span{
       display: block;
       font-size: 5.2em;
       color:@w;
+      @media @tablet{
+        font-size: 3.6em;
+      }
+      @media @mobile{
+        font-size: 2.2em;
+      }
     }
   }
 }
@@ -140,6 +170,7 @@ section{
       font-weight: 700;
       font-size: 4em;
       &+.sec{ margin-top: -20px; }
+      @media @mobile{ font-size: 2em; }
     }
     .sec{
       .font2;
@@ -154,6 +185,7 @@ section{
     color:@w;
     margin: 10px 0;
     text-shadow: 0 0px 20px @b;
+    @media @mobile{ font-size: 1em; }
   }
   ul,ol{
     list-style-type: square;
@@ -221,9 +253,49 @@ section{
 }
 
 
+#contacto{
+  form{
+    input,textarea{
+      background: @w;
+      .box-sizing(border-box);
+      width: 100%;
+      margin: 10px 0;
+      .font2;
+      padding: 10px;
+    }
+  }
+  .button{
+    background: @main;
+    &:active{
+      color:@b;
+    }
+  }
+}
 
+
+.tvlogin{
+  background: @w;
+  padding: 20px;
+  input{background: @w/1.1; margin: 5px 20px; padding: 10px 20px; .tac; }
+  .button{
+    margin: 10px 0;
+    background: @main;
+    color:@w;
+  }
+}
 
 section#nosotros{ background-image: url(img/nosotros.jpg); }
 section#tienda{ background-image: url(img/tienda.jpg); }
 section#marcas{ background-image: url(img/marcas.jpg); }
 section#productos{ background-image: url(img/productos.jpg);}
+section#distribuidor{ background-image: url(img/distribuidor.jpg);}
+section#promociones{ background-image: url(img/promociones.jpg);}
+section#contacto{ background-image: url(img/contacto.jpg);}
+section#tiendavirtual{ background-image: url(img/tiendavirtual.jpg);}
+
+
+section.banner_a{ background-image: url(img/banner_a.jpg);}
+section.banner_b{ background-image: url(img/banner_b.jpg);}
+section.banner_c{ background-image: url(img/banner_c.jpg);}
+section.banner_d{ background-image: url(img/banner_d.jpg);}
+section.banner_e{ background-image: url(img/banner_e.jpg);}

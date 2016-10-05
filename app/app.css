@@ -1482,6 +1482,12 @@ nav {
   padding: 10px 0;
   z-index: 10;
 }
+@media only screen and (max-width: 720px) {
+  nav {
+    bottom: auto;
+    top: 0;
+  }
+}
 nav ul {
   margin-left: auto;
   margin-right: auto;
@@ -1523,6 +1529,12 @@ nav ul.column {
 nav ul .container {
   width: 100%;
 }
+@media only screen and (max-width: 720px) {
+  nav ul {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
 nav ul li {
   -webkit-flex-basis: 0;
   flex-basis: 0;
@@ -1535,6 +1547,30 @@ nav ul li.g {
   margin-left: 5px;
   margin-right: 5px;
 }
+@media only screen and (max-width: 720px) {
+  nav ul li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex-basis: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.33333333%;
+  }
+  nav ul li.g {
+    -lh-property: 0;
+flex-basis:-webkit-calc(33.333333333333336% - 10px);
+flex-basis:-moz-calc(33.333333333333336% - 10px);
+flex-basis:calc(33.333333333333336% - 10px);
+;
+    -lh-property: 0;
+max-width:-webkit-calc(33.333333333333336% - 10px);
+max-width:-moz-calc(33.333333333333336% - 10px);
+max-width:calc(33.333333333333336% - 10px);
+;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 nav ul li a {
   font-size: 0.7em;
   color: #fff;
@@ -1544,18 +1580,26 @@ nav ul li a {
   padding: 5px;
   border: 1px solid #D72E2E;
 }
-nav ul li a:hover,
-nav ul li a.active {
-  border: 1px solid #fff;
-}
 h1.logo {
   width: 287px;
   height: 212px;
-  background: url(img/zarco.png);
+  background-image: url(img/zarco.png);
+  background-size: 100%;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px) {
+  h1.logo {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  h1.logo {
+    width: 25%;
+    left: -5%;
+  }
 }
 header {
   width: 100%;
@@ -1566,14 +1610,35 @@ header .phrase {
   text-shadow: 0 5px 2px #202020;
   line-height: 40px;
 }
+@media only screen and (max-width: 720px) {
+  header .phrase {
+    line-height: 30px;
+    margin-top: 130px;
+  }
+}
 header .phrase small {
   font-size: 2em;
   color: #D72E2E;
+}
+@media only screen and (max-width: 720px) {
+  header .phrase small {
+    font-size: 1.6em;
+  }
 }
 header .phrase span {
   display: block;
   font-size: 5.2em;
   color: #fff;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px) {
+  header .phrase span {
+    font-size: 3.6em;
+  }
+}
+@media only screen and (max-width: 720px) {
+  header .phrase span {
+    font-size: 2.2em;
+  }
 }
 .mainBannerOutside {
   position: relative;
@@ -1653,6 +1718,11 @@ section h3.title .main {
 section h3.title .main + .sec {
   margin-top: -20px;
 }
+@media only screen and (max-width: 720px) {
+  section h3.title .main {
+    font-size: 2em;
+  }
+}
 section h3.title .sec {
   font-family: 'Pragati Narrow', sans-serif;
   color: #fff;
@@ -1669,6 +1739,13 @@ section ol {
   color: #fff;
   margin: 10px 0;
   text-shadow: 0 0px 20px #202020;
+}
+@media only screen and (max-width: 720px) {
+  section p,
+  section ul,
+  section ol {
+    font-size: 1em;
+  }
 }
 section ul,
 section ol {
@@ -1727,6 +1804,38 @@ section ol {
   border: none;
   max-width: 200px;
 }
+#contacto form input,
+#contacto form textarea {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0;
+  font-family: 'Pragati Narrow', sans-serif;
+  padding: 10px;
+}
+#contacto .button {
+  background: #D72E2E;
+}
+#contacto .button:active {
+  color: #202020;
+}
+.tvlogin {
+  background: #fff;
+  padding: 20px;
+}
+.tvlogin input {
+  background: #e8e8e8;
+  margin: 5px 20px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.tvlogin .button {
+  margin: 10px 0;
+  background: #D72E2E;
+  color: #fff;
+}
 section#nosotros {
   background-image: url(img/nosotros.jpg);
 }
@@ -1738,4 +1847,31 @@ section#marcas {
 }
 section#productos {
   background-image: url(img/productos.jpg);
+}
+section#distribuidor {
+  background-image: url(img/distribuidor.jpg);
+}
+section#promociones {
+  background-image: url(img/promociones.jpg);
+}
+section#contacto {
+  background-image: url(img/contacto.jpg);
+}
+section#tiendavirtual {
+  background-image: url(img/tiendavirtual.jpg);
+}
+section.banner_a {
+  background-image: url(img/banner_a.jpg);
+}
+section.banner_b {
+  background-image: url(img/banner_b.jpg);
+}
+section.banner_c {
+  background-image: url(img/banner_c.jpg);
+}
+section.banner_d {
+  background-image: url(img/banner_d.jpg);
+}
+section.banner_e {
+  background-image: url(img/banner_e.jpg);
 }

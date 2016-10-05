@@ -9,7 +9,7 @@ include _config.jade
     +menu
     h1.logo(du-smooth-scroll="#inicio")
     header(backstretch backstretch-images=" ['app/img/header_1.jpg', 'app/img/header_2.jpg', 'app/img/header_3.jpg']", backstretch-fade="1")#inicio
-      .container: h2.c8.o4.phrase
+      .container: h2.c8.o4.ot2.om2.phrase
         small TODO PARA
         span MOTOCICLETAS
     
@@ -37,10 +37,10 @@ include _config.jade
           .sec Visítanos
         .c8.o2
           p: strong Contamos con una de las tiendas de mayoreo y menudeo con mayor surtido de refacciones y accesorios de la Ciudad de México, nuestro surtido va acompañado con la mejor asesoría de compra, cada uno de nuestro agentes de ventas, esta capacitado para orientarte y recomendarte el mejor reemplazo que tu motocicleta necesita.
-        .c6.g
+        .c6.g.cm10.om1
           .map
             | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8927227204504!2d-99.10369437404935!3d19.460191525109618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f960598ec16b%3A0x8bb35596d1531e6b!2sNte.+82+5123%2C+Gertrudis+S%C3%A1nchez+III+Secc%2C+07839+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1475534323512" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
-        .c6.g
+        .c6.g.cm10.om1
           p: strong.red Tienda Yu-Long Moto
           p Norte 82 No 5123 Colonia Gertrudis Sánchez
           p Delegación Gustavo A. Madero, Ciudad de México
@@ -64,7 +64,7 @@ include _config.jade
             div: img(src="app/img/marca_8.jpg" title="NGK: Especialistas en fabricación de bujías para todo tipo de motocicleta.").tooltip.fluid
             div: img(src="app/img/marca_9.jpg" title="CASTROL: Fabricante líder en el mundo de los aceites lubricantes par motor de cualquier motocicleta.").tooltip.fluid
     
-    
+    section.banner_a
     section#productos
       .container
         .c8.o2: h3.title
@@ -103,5 +103,69 @@ include _config.jade
               img(src="app/img/pr_10.jpg").fluid
               .text Cadenas
     
+    section.banner_b
+    section#distribuidor
+      .container
+        .c8.o2: h3.title
+          .main DISTRIBUIDORES
+          .sec Nuestra red de distribución
+        .c8.o2
+          p Comercializadora Zarco busca distribuidores, si tu quieres pertenecer a nuestra red de distribución, contáctate con nosotros o te invitamos a que te registres y así poder obtener los beneficios propios de ser Distribuidor Oficial.
+        .c8.o2: h3.title
+          .sec Materiales para distribuidores
+        .c8.o2
+          p Amigo distribuidor, en Comercializadora Zarco queremos que tengas las mejores herramientas de ventas, entre ellas tenemos materiales promocionales como:
+          ul
+            li Lonas
+            li Posters
+            li Folletos
+            li Banner en nuestra página web y facebook
+            li Entre otros
+          p: strong Llámanos o contacta a tu agente de ventas.
+        .c8.o2: h3.title
+          .sec Franquicias
+        .c8.o2
+          p En Comercializadora Zarco hemos creado un programa de Franquicias, muy pronto presentaremos el programa completo para que puedas ser beneficiario del programa.
+        .c8.o2: h3.title
+          .sec Catálogo con precios
+        .c8.o2
+          p Amigo distribuidor, nuestro catálogo es una de las herramientas más importantes para tus agentes, en el puedes encontrar gráficamente nuestros productos, así como descripción y precios.
     
+    section.banner_c
+    section#promociones
+      .container
+        .c8.o2: h3.title
+          .main PROMOCIONES
+          .sec Regresa prónto y conóce nuestras promociones
+    section.banner_d
+    section#contacto
+      .container
+        .c8.o2: h3.title
+          .main CONTACTO
+          .sec Visítanos o escríbenos
+        .c6.g.cm10.om1
+          p: strong.red Comercializadora Zarco
+          p Norte 82 No 5123 Colonia Gertrudis Sánchez. Delegación Gustavo A. Madero, Ciudad de México
+          p Teléfono: (55) 2603 4801
+          .map
+            | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8927227204504!2d-99.10369437404935!3d19.460191525109618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f960598ec16b%3A0x8bb35596d1531e6b!2sNte.+82+5123%2C+Gertrudis+S%C3%A1nchez+III+Secc%2C+07839+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1475534323512" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+        .c6.g.cm10.om1
+          p: strong.red Llena el siguiente formulario
+          +form('contacto@zarco.com', 'Mensaje del sitio web')
+    section.banner_e
+    section#tiendavirtual
+      .container
+        .c8.o2: h3.title
+          .main TIENDA
+          .sec Virtual
+        .c6.o3.cm10.om1
+          form.tvlogin
+            .tac: input(type="text", placeholder="Usuario", name="user_tv")
+            .tac: input(type="password", placeholder="Contraseña", name="pass_tv")
+            .tac
+              button(type="submit").button
+                span Ingresar
+          .tac: a(href="#").red Registrarme
+          
     +scripts

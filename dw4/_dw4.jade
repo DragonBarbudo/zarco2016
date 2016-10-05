@@ -72,13 +72,13 @@ mixin form(_to, _subject , respuesta)
       if block
         block
       else
-        .c12.g: label
+        .c12.g
           input(type="text", placeholder="Nombre", name="Nombre" required)
-        .c12.g: label
+        .c12.g
           input(type="email", placeholder="Correo electrónico", name="Email", ng-model="email", required)
-        .c12.g: label
+        .c12.g
           input(type="text", placeholder="Teléfono", name="Telefono")
-        .c12.g: label
+        .c12.g
           textarea(placeholder="Su mensaje", name="Mensaje", required)
         .c12.g.tac
           button(type="submit").button.button-pill.button-primary

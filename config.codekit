@@ -53,6 +53,72 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/app\/img\/banner_a.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 340969,
+		"inputAbbreviatedPath": "\/app\/img\/banner_a.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/banner_a.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/banner_b.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 281190,
+		"inputAbbreviatedPath": "\/app\/img\/banner_b.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/banner_b.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/banner_c.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320495,
+		"inputAbbreviatedPath": "\/app\/img\/banner_c.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/banner_c.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/banner_d.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 515690,
+		"inputAbbreviatedPath": "\/app\/img\/banner_d.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/banner_d.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/banner_e.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 217035,
+		"inputAbbreviatedPath": "\/app\/img\/banner_e.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/banner_e.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/contacto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144517,
+		"inputAbbreviatedPath": "\/app\/img\/contacto.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/contacto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/img\/corners.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -60,6 +126,17 @@
 		"initialSize": 5824,
 		"inputAbbreviatedPath": "\/app\/img\/corners.png",
 		"outputAbbreviatedPath": "\/app\/img\/corners.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/distribuidor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230444,
+		"inputAbbreviatedPath": "\/app\/img\/distribuidor.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/distribuidor.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -361,6 +438,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/app\/img\/promociones.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 199208,
+		"inputAbbreviatedPath": "\/app\/img\/promociones.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/promociones.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/img\/tienda.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -368,6 +456,17 @@
 		"initialSize": 278284,
 		"inputAbbreviatedPath": "\/app\/img\/tienda.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/tienda.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/tiendavirtual.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 244855,
+		"inputAbbreviatedPath": "\/app\/img\/tiendavirtual.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/tiendavirtual.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -545,15 +644,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
