@@ -21,6 +21,32 @@ body{
   .font;
 }
 
+.catalogoBtn{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background: @main;
+  padding: 10px;
+  .box-sizing(border-box);
+  z-index: 9;
+  color:@w;
+  width: auto;
+  div{
+    float: right;
+    font-size: 0.8em;
+    margin-left: 10px;
+    overflow: hidden;
+    line-height: 2.2em;
+    display: none;
+  }
+  &:hover{
+    div{
+      display: block;
+      .transition;
+    }
+  }
+}
+
 nav{
   background: @main;
   position: fixed;
