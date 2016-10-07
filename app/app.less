@@ -25,24 +25,34 @@ body{
   position: fixed;
   right: 0;
   top: 50%;
-  background: @main;
-  padding: 10px;
-  .box-sizing(border-box);
   z-index: 9;
-  color:@w;
-  width: auto;
-  div{
-    float: right;
-    font-size: 0.8em;
-    margin-left: 10px;
-    overflow: hidden;
-    line-height: 2.2em;
-    display: none;
+  .icon{
+    font-size: 24px;
+    margin: 0 3px;
   }
-  &:hover{
-    div{
-      display: block;
-      .transition;
+  a{
+    float: right;
+    clear: both;
+    display: block;
+    margin: 1px 0;
+    background: @main;
+    padding: 10px;
+    .box-sizing(border-box);
+    color:@w;
+    width: auto;
+    &>div{
+      float: right;
+      font-size: 0.8em;
+      margin-left: 10px;
+      overflow: hidden;
+      line-height: 2.2em;
+      display: none;
+    }
+    &:hover{
+      &>div{
+        display: block;
+        .transition;
+      }
     }
   }
 }

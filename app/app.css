@@ -1477,16 +1477,26 @@ body {
   position: fixed;
   right: 0;
   top: 50%;
+  z-index: 9;
+}
+.catalogoBtn .icon {
+  font-size: 24px;
+  margin: 0 3px;
+}
+.catalogoBtn a {
+  float: right;
+  clear: both;
+  display: block;
+  margin: 1px 0;
   background: #D72E2E;
   padding: 10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  z-index: 9;
   color: #fff;
   width: auto;
 }
-.catalogoBtn div {
+.catalogoBtn a > div {
   float: right;
   font-size: 0.8em;
   margin-left: 10px;
@@ -1494,7 +1504,7 @@ body {
   line-height: 2.2em;
   display: none;
 }
-.catalogoBtn:hover div {
+.catalogoBtn a:hover > div {
   display: block;
   -webkit-transition: all 0s ease 0s;
   -moz-transition: all 0s ease 0s;

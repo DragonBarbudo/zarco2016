@@ -5,9 +5,18 @@ include _config.jade
   
   body(ng-app="dw4")
 
-    a(href="app/cats/zarco_cascos.pdf", target="_blank").catalogoBtn.cascos
-      img(src="app/img/helmet.png", alt="Catálogo de cascos")
-      div Descargar el catálogo de cascos
+    .catalogoBtn
+      a(href="app/cats/zarco_cascos.pdf", target="_blank").cascos
+        i.fa.fa-file.icon
+        div
+          | Catálogo de Productos 
+          i.fa.fa-download
+        
+      a(href="app/cats/zarco_cascos.pdf", target="_blank").cascos
+        img(src="app/img/helmet.png", alt="Catálogo de cascos")
+        div 
+          | Catálogo de Cascos 
+          .fa.fa-download
     
     
     +menu
